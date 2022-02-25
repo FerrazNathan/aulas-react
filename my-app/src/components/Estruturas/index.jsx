@@ -12,7 +12,7 @@ const Estruturas = () => {
 			bola_de_ouro: true,
 			time: {
 				atual: 'Paris Saint-Germain',
-				último: 'Barcelona',
+				ultimo: 'Barcelona',
 			}
 		},
 		{
@@ -24,7 +24,7 @@ const Estruturas = () => {
 			bola_de_ouro: true,
 			time: {
 				atual: 'Manchester-United',
-				último: 'Juventus',
+				ultimo: 'Juventus',
 			}
 		},
 		{
@@ -36,7 +36,7 @@ const Estruturas = () => {
 			bola_de_ouro: true,
 			time: {
 				atual: 'Aposentado',
-				último: 'Corinthians',
+				ultimo: 'Corinthians',
 			}
 		},
 	]

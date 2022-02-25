@@ -8,8 +8,8 @@ const Estruturas = () => {
 			posição: 'atacante',
 			idade: 34,
 			país: 'Argentina',
-			ganhou-copa: false,
-			bola-de-ouro: true,
+			ganhou_copa: false,
+			bola_de_ouro: true,
 			time: {
 				atual: 'Paris Saint-Germain',
 				último: 'Barcelona',
@@ -20,8 +20,8 @@ const Estruturas = () => {
 			posição: 'atacante',
 			idade: 36,
 			país: 'Portugal',
-			ganhou-copa: false,
-			bola-de-ouro: true,
+			ganhou_copa: false,
+			bola_de_ouro: true,
 			time: {
 				atual: 'Manchester-United',
 				último: 'Juventus',
@@ -32,8 +32,8 @@ const Estruturas = () => {
 			posição: 'atacante',
 			idade: 45,
 			país: 'Brasil',
-			ganhou-copa: true,
-			bola-de-ouro: true,
+			ganhou_copa: true,
+			bola_de_ouro: true,
 			time: {
 				atual: 'Aposentado',
 				último: 'Corinthians',

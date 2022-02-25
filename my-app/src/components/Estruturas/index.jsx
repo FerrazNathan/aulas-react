@@ -5,9 +5,9 @@ const Estruturas = () => {
 	const bestPlayer = [
 		{
 			jogador: 'Lionel Andrés Messi',
-			posição: 'atacante',
+			posicao: 'atacante',
 			idade: 34,
-			país: 'Argentina',
+			nacionalidade: 'Argentino',
 			ganhou_copa: false,
 			bola_de_ouro: true,
 			time: {
@@ -17,9 +17,9 @@ const Estruturas = () => {
 		},
 		{
 			jogador: 'Cristiano Ronaldo dos Santos Aveiro',
-			posição: 'atacante',
+			posicao: 'atacante',
 			idade: 36,
-			país: 'Portugal',
+			nacionalidade: 'Português',
 			ganhou_copa: false,
 			bola_de_ouro: true,
 			time: {
@@ -29,9 +29,9 @@ const Estruturas = () => {
 		},
 		{
 			jogador: 'Ronaldo Luís Nazário de Lima',
-			posição: 'atacante',
+			posicao: 'atacante',
 			idade: 45,
-			país: 'Brasil',
+			nacionalidade: 'Brasileiro',
 			ganhou_copa: true,
 			bola_de_ouro: true,
 			time: {
@@ -43,8 +43,9 @@ const Estruturas = () => {
 
 	return (
 		<div>
-			<h1>{bestPlayer[0].jogador}</h1>
-			<p>Melhor jogador de todos os tempos</p>
+			<h1> {bestPlayer[0].jogador}</h1>
+			<p>Jogador do {bestPlayer[0].time.atual}, {bestPlayer[0].nacionalidade}, {bestPlayer[0].posicao}, {bestPlayer[0].idade} anos</p>
+			<p> É o melhor jogador de todos os tempos</p>
 		</div>
 	)
 }

@@ -13,7 +13,7 @@ function App() {
         <div>
           {
             familia.map(item => (
-              <ListData key={item.nome} item={item} />
+              <ListData key={item.name} item={item} />
             ))
           }
         </div>

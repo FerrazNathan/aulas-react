@@ -1,42 +1,47 @@
 export const familia = [
   {
-    nome: 'Nathan Ferraz',
-    idade: 34,
-    telefone: 11941124111,
-    data_nasc: '19 / 08 / 1987',
-    mae: 'Rosa Maria Dias Ferraz',
-    pai: ''
+    title: 'Nathan',
+    name: 'Nathan Henrique Dias Ferraz',
+    age: 34,
+    fone: 11941124111,
+    date_born: '19 / 08 / 1987',
+    name_mother: 'Rosa Maria Dias Ferraz',
+    name_father: ''
   },
   {
-    nome: 'Mariane Ferraz',
-    idade: 29,
-    telefone: 11992747681,
-    data_nasc: '16 / 05 / 1992',
-    mae: 'Claudia Santos de Jesus Menezes',
-    pai: 'José Reinaldo',
+    title: 'Mariane',
+    name: 'Mariane Santos Silva Ferraz',
+    age: 29,
+    fone: 11992747681,
+    date_born: '16 / 05 / 1992',
+    name_mother: 'Claudia Santos de Jesus Menezes',
+    name_father: 'José Reinaldo',
   },
   {
-    nome: 'Filipe Dias Ferraz',
-    idade: 42,
-    telefone: 11974321972,
-    data_nasc: '12 / 10 / 1979',
-    mae: 'Rosa Maria Dias Ferraz',
-    pai: ''
+    title: 'Filipe',
+    name: 'Filipe Dias Ferraz',
+    age: 42,
+    fone: 11974321972,
+    date_born: '12 / 10 / 1979',
+    name_mother: 'Rosa Maria Dias Ferraz',
+    name_father: ''
   },
   {
-    nome: 'Fernanda Ferraz',
-    idade: 38,
-    telefone: 11996810837,
-    data_nasc: '27 / 03 / 1983',
-    mae: 'Rosa Maria Dias Ferraz',
-    pai: 'Adilson Nascimento'
+    title: 'Fernanda',
+    name: 'Fernanda Ferraz Dos Santos',
+    age: 38,
+    fone: 11996810837,
+    date_born: '27 / 03 / 1983',
+    name_mother: 'Rosa Maria Dias Ferraz',
+    name_father: 'Adilson Nascimento'
   },
   {
-    nome: 'Roberta Ferraz',
-    idade: 40,
-    telefone: 4784453252,
-    data_nasc: '25 / 01 / 1982',
-    mae: 'Rosa Maria Dias Ferraz',
-    pai: 'Adilson Nascimento'
+    title: 'Roberta',
+    name: 'Roberta Ferraz Dos Santos',
+    age: 40,
+    fone: 4784453252,
+    date_born: '25 / 01 / 1982',
+    name_mother: 'Rosa Maria Dias Ferraz',
+    name_father: 'Adilson Nascimento'
   }
 ]

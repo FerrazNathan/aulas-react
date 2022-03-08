@@ -1,6 +1,6 @@
 export const familia = [
   {
-    foto: './mary.jpg',
+    image: './mary.jpg',
     title: 'Mariane Ferraz',
     name: 'Mariane Santos Silva Ferraz',
     age: 29,
@@ -10,7 +10,7 @@ export const familia = [
     name_father: 'José Reinaldo',
   },
   {
-    foto: './fernanda.jpg',
+    image: './fernanda.jpg',
     title: 'Fernanda Ferraz',
     name: 'Fernanda Ferraz Dos Santos',
     age: 38,
@@ -20,7 +20,7 @@ export const familia = [
     name_father: 'Adilson Nascimento'
   },
   {
-    foto: './roberta.jpg',
+    image: './roberta.jpg',
     title: 'Roberta Ferraz',
     name: 'Roberta Ferraz Bansen',
     age: 40,
@@ -30,7 +30,7 @@ export const familia = [
     name_father: 'Adilson Nascimento'
   },
   {
-    foto: './nathan.jpg',
+    image: './nathan.jpg',
     title: 'Nathan Ferraz',
     name: 'Nathan Henrique Dias Ferraz',
     age: 34,
@@ -40,7 +40,7 @@ export const familia = [
     name_father: ''
   },
   {
-    foto: './filipe.jpg',
+    image: './filipe.jpg',
     title:'Filipe Ferraz',
     name: 'Filipe Dias Ferraz',
     age: 42,

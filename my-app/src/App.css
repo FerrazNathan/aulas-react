@@ -68,12 +68,9 @@ code {
   margin-top: 20px;
 }
 
-.App-card{
-  border: 1px solid #FFF;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  width: 400px;
-  height: 100%;
+.Card-header h2{
+  margin-right: 40px;
+  text-transform: uppercase;
+  width: 200px;
 }
+

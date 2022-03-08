@@ -40,7 +40,7 @@ const Estruturas = () => {
 			}
 		},
 	]
-
+	
 	return (
 		<div>
 			<h1> {bestPlayer[0].jogador}</h1>

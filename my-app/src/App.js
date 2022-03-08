@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <Estruturas /> */}
-        <div>
+        <div className='App-map'>
           {
             familia.map(item => (
               <ListData key={item.name} item={item} />

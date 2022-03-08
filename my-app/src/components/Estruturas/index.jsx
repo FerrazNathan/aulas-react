@@ -40,39 +40,12 @@ const Estruturas = () => {
 			}
 		},
 	]
-	const nathan = {
-		familia: [
-			{
-				nome: 'Nathan Henrique Dias Ferraz',
-				idade: 34,
-				casado: true
-			},
-			{
-				nome: 'Mariane Santos Silva Ferraz',
-				idade: 29,
-				casado: true
-			},
-			{
-				nome: 'Nicoli de Assis Ferraz',
-				idade: 14,
-				casado: false
-			}
-		],
-		amigos: [
-			{
-				nome: 'Douglas Florentino dos Santos',
-				time: 'Corinthians'
-			}
 	
-		]
-	}
-
 	return (
 		<div>
 			<h1> {bestPlayer[0].jogador}</h1>
 			<p>Jogador do {bestPlayer[0].time.atual}, {bestPlayer[0].nacionalidade}, {bestPlayer[0].posicao}, {bestPlayer[0].idade} anos</p>
 			<p> É o melhor jogador de todos os tempos</p>
-			<p>Melhor time de todos é o {nathan.amigos[0].time}</p>
 		</div>
 	)
 }

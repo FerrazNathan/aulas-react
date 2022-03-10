@@ -2,7 +2,7 @@ import React from 'react';
 import Estruturas from '../src/components/Estruturas'
 import './App.css';
 import ListData from './components/ ListData';
-import { familia } from './mock';
+import { family } from './mock';
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
         {/* <Estruturas /> */}
         <div className='App-map'>
           {
-            familia.map(item => (
+            family.map(item => (
               <ListData key={item.name} item={item} />
             ))
           }

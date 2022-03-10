@@ -16,6 +16,8 @@ export const family = [
     age: 14,
     birthDate: '10 / 11 / 2007',
     phone: '(11) 9 7012-3867',
+    dateBorn: '10 / 11 / 2007',
+    fone: '(11) 9 7012-3867',
     nameMother: 'Renata de Assis Amaral',
     nameFather: 'Nathan Henrique Dias Ferraz'
   },
@@ -26,6 +28,8 @@ export const family = [
     age: 5,
     birthDate: '07 / 04 / 2016',
     phone: '(11) 9 4112-4111',
+    dateBorn: '07 / 04 / 2016',
+    fone: '(11) 9 4112-4111',
     nameMother: 'Mariane Santos Silva Ferraz',
     nameFather: 'Nathan Henrique Dias Ferraz'
   },
@@ -36,6 +40,8 @@ export const family = [
     age: 4,
     birthDate: '12 /09 / 2018',
     phone: '(11) 9 9274-7681',
+    dateBorn: '12 /09 / 2018',
+    fone: '(11) 9 9274-7681',
     nameMother: 'Mariane Santos Silva Ferraz',
     nameFather: 'Nathan Henrique Dias Ferraz'
   },
@@ -46,6 +52,8 @@ export const family = [
     age: 10,
     birthDate: '24 / 04 / 2011',
     phone: '(11) 9 4112-4111',
+    dateBorn: '24 / 04 / 2011',
+    fone: '(11) 9 4112-4111',
     nameMother: 'Mariane Santos Silva Ferraz',
     nameFather: ''
   },

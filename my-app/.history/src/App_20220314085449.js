@@ -10,13 +10,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <Estruturas /> */}
-        {/* <div className='App-map'>
+        <div className='App-map'>
           {
             family.map(item => (
               <ListData key={item.name} item={item} />
             ))
           }
-        </div> */}
+        </div>
       </header>
     </div>
   );

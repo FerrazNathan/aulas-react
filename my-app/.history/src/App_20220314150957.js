@@ -2,7 +2,7 @@ import React from 'react';
 import Estruturas from '../src/components/Estruturas'
 import './App.css';
 import ListData from './components/ ListData';
-import { family, animal } from './mock';
+import { family } from './mock';
 
 function App() {
 
@@ -17,15 +17,6 @@ function App() {
             ))
           }
         </div> */}
-        {
-          <div className='App-map'>
-            {
-              animal.map(animal => (
-                <ListData key={animal.name} animal={animal} />
-              ))
-            }
-          </div>
-        }
       </header>
     </div>
   );

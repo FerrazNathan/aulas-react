@@ -68,30 +68,3 @@ export const family = [
     nameFather: ''
   }
 ]
-
-export const animal = [
-  {
-    name: 'Leão',
-    habitat: 'Savana da África e Ásia',
-    species: 'Felino',
-    pet: false
-  },
-  {
-    name: 'Cachorro',
-    habitat: 'Ocorre no mundo inteiro',
-    species: 'Canídeo',
-    pet: true
-  },
-  {
-    name: 'Hipopótamo',
-    habitat: 'África',
-    species: 'Porcino',
-    pet: false
-  },
-  {
-    name: 'Calopsita',
-    habitat: 'Austrália',
-    species: 'Psittaciformes',
-    pet: true
-  }
-]

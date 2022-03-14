@@ -67,7 +67,7 @@ export const family = [
     nameMother: 'Rosa Maria Dias Ferraz',
     nameFather: ''
   }
-]
+],
 
 export const animal = [
   {

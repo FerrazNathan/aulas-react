@@ -20,7 +20,7 @@ function App() {
         {
           <div className='App-map'>
             {
-              animal.map(animal => (
+              animals.map(animal => (
                 <ListData key={animal.name} animal={animal} />
               ))
             }

@@ -13,18 +13,20 @@ code {
 }
 
 .App {
-  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.App-map{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  color: #FFF;
 }
 
 .App-card{
@@ -33,10 +35,43 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 400px;
+  width: 380px;
   height: 100%;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 10px;
 }
 
-.Card-text{
-
+.Card-text p{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: start;
+  margin: 10px 15px;
 }
+
+.Card-text span{
+  font-size: 18px;
+  text-transform: none;
+  margin: 10px 15px;
+}
+
+.Card-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 18px;
+}
+
+.Card-header img{
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+}
+
+.Card-header h2{
+  margin-right: 40px;
+  text-transform: uppercase;
+  width: 200px;
+}
+

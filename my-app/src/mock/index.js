@@ -1,47 +1,70 @@
-export const familia = [
+export const family = [
   {
-    title: 'Nathan',
-    name: 'Nathan Henrique Dias Ferraz',
-    age: 34,
-    fone: 11941124111,
-    date_born: '19 / 08 / 1987',
-    name_mother: 'Rosa Maria Dias Ferraz',
-    name_father: ''
-  },
-  {
-    title: 'Mariane',
+    image: './mary.jpg',
+    title: 'Mariane Ferraz',
     name: 'Mariane Santos Silva Ferraz',
     age: 29,
-    fone: 11992747681,
-    date_born: '16 / 05 / 1992',
-    name_mother: 'Claudia Santos de Jesus Menezes',
-    name_father: 'José Reinaldo',
+    birthDate: '16 / 05 / 1992',
+    phone: '(11) 9 9274-7681',
+    nameMother: 'Claudia Santos de Jesus Menezes',
+    nameFather: 'José Reinaldo',
   },
   {
-    title: 'Filipe',
-    name: 'Filipe Dias Ferraz',
-    age: 42,
-    fone: 11974321972,
-    date_born: '12 / 10 / 1979',
-    name_mother: 'Rosa Maria Dias Ferraz',
-    name_father: ''
+    image: './nicoli.jpeg',
+    title:'Nicoli Ferraz',
+    name: 'Nicoli de Assis Ferraz',
+    age: 14,
+    birthDate: '10 / 11 / 2007',
+    phone: '(11) 9 7012-3867',
+    dateBorn: '10 / 11 / 2007',
+    fone: '(11) 9 7012-3867',
+    nameMother: 'Renata de Assis Amaral',
+    nameFather: 'Nathan Henrique Dias Ferraz'
   },
   {
-    title: 'Fernanda',
-    name: 'Fernanda Ferraz Dos Santos',
-    age: 38,
-    fone: 11996810837,
-    date_born: '27 / 03 / 1983',
-    name_mother: 'Rosa Maria Dias Ferraz',
-    name_father: 'Adilson Nascimento'
+    image: './livia.jpeg',
+    title:'Lívia Ferraz',
+    name: 'Lívia da Silva Ferraz',
+    age: 5,
+    birthDate: '07 / 04 / 2016',
+    phone: '(11) 9 4112-4111',
+    dateBorn: '07 / 04 / 2016',
+    fone: '(11) 9 4112-4111',
+    nameMother: 'Mariane Santos Silva Ferraz',
+    nameFather: 'Nathan Henrique Dias Ferraz'
   },
   {
-    title: 'Roberta',
-    name: 'Roberta Ferraz Dos Santos',
-    age: 40,
-    fone: 4784453252,
-    date_born: '25 / 01 / 1982',
-    name_mother: 'Rosa Maria Dias Ferraz',
-    name_father: 'Adilson Nascimento'
+    image: './isa.jpeg',
+    title:'Isabele Ferraz',
+    name: 'Isabale da Silva Ferraz',
+    age: 4,
+    birthDate: '12 /09 / 2018',
+    phone: '(11) 9 9274-7681',
+    dateBorn: '12 /09 / 2018',
+    fone: '(11) 9 9274-7681',
+    nameMother: 'Mariane Santos Silva Ferraz',
+    nameFather: 'Nathan Henrique Dias Ferraz'
+  },
+  {
+    image: './lolo.jpeg',
+    title:'Lorrayne Silva',
+    name: 'Lorrayne Santos Silva',
+    age: 10,
+    birthDate: '24 / 04 / 2011',
+    phone: '(11) 9 4112-4111',
+    dateBorn: '24 / 04 / 2011',
+    fone: '(11) 9 4112-4111',
+    nameMother: 'Mariane Santos Silva Ferraz',
+    nameFather: ''
+  },
+  {
+    image: './nathan.jpg',
+    title: 'Nathan Ferraz',
+    name: 'Nathan Henrique Dias Ferraz',
+    age: 34,
+    birthDate: '19 / 08 / 1987',
+    phone: '(11) 9 4112-4111',
+    nameMother: 'Rosa Maria Dias Ferraz',
+    nameFather: ''
   }
 ]

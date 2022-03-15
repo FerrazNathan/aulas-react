@@ -7,7 +7,7 @@ import { family, animal } from './mock';
 function App() {
 
   const users = {
-    user: 'premiun'
+    user: 'italo'
   }
 
   return (
@@ -21,6 +21,7 @@ function App() {
               {users.user === 'premiun' &&
                 <div>
                   <h1>Parabéns você é um usuário Premiun e tem acesso a todo conteúdo da nossa loja</h1>
+                  <img src='./premuin.jpeg' />
                 </div>
               }
               {users.user === 'padrao' && <h1>Você é um usuário padrão, e tem acesso ao conteúdo padrão de nossa loja</h1>}

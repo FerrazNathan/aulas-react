@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Structures />
-        <Map />
+        {/* <Structures />
+        <Map /> */}
         <Filter />
       </header>
     </div>

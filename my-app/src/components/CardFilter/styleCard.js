@@ -12,4 +12,25 @@ export const Content = styled.div`
     text-transform: none;
     margin: 10px 15px;
   }
+  & h1{
+    padding: 10px;
+    margin-left: 5px;
+  }
+`
+
+export const BoxHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 18px;
+  & img{
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+  }
+  & h2{
+    margin-right: 30px;
+    text-transform: uppercase;
+    width: 200px;
+  }
 `

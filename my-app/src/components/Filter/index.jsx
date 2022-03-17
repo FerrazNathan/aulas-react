@@ -13,7 +13,7 @@ export default function Filter() {
 
   const list = shoppingList.filter(list => {
     return (
-      list.fruit === 'abacaxi'
+      list.fruit === 'Abacaxi'
     )
   })
 

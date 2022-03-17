@@ -1,5 +1,6 @@
 export const bestPlayer = [
   {
+    image: './messi.jpeg',
     jogador: 'Lionel Andrés Messi',
     posicao: 'atacante',
     idade: 34,
@@ -12,6 +13,7 @@ export const bestPlayer = [
     }
   },
   {
+    image: './cr7.jpeg',
     jogador: 'Cristiano Ronaldo dos Santos Aveiro',
     posicao: 'atacante',
     idade: 36,
@@ -24,6 +26,7 @@ export const bestPlayer = [
     }
   },
   {
+    image: './ronaldo.jpeg',
     jogador: 'Ronaldo Luís Nazário de Lima',
     posicao: 'atacante',
     idade: 45,
@@ -129,24 +132,28 @@ export const family = [
 
 export const players = [
   {
+    title: 'Não ganhou a copa do mundo',
     name: 'Messi',
     team: 'Paris Saint Germain',
     country: 'Argentina',
     worldCup: false
   },
   {
+    title: 'Não ganhou a copa do mundo',
     name: 'Cristiano Ronaldo',
     team: 'Manchester United',
     country: 'Portugal',
     worldCup: false
   },
   {
+    title: 'Ganhou a copa do mundo',
     name: 'Muller',
     team: 'Bayern Munchen',
     country: 'Alemanha',
     worldCup: true
   },
   {
+    title: 'Ganhou a copa do mundo',
     name: 'Piqué',
     team: 'Barcelona',
     country: 'Espanha',
@@ -156,7 +163,7 @@ export const players = [
 
 export const shoppingList = [
   {
-    fruit: 'abacaxi',
+    fruit: 'Abacaxi',
     mixture: 'Contra-filé',
     drink: 'Coca-Cola'
   },
@@ -166,7 +173,7 @@ export const shoppingList = [
     drink: 'Suco'
   },
   {
-    fruit: 'abacaxi',
+    fruit: 'Abacaxi',
     mixture: 'Picanha',
     drink: 'Leite'
   }

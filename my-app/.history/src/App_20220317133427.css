@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+
+}
+
+.container {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  color: #FFF;
+}
+
+.App-card{
+  border: 1px solid #FFF;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 380px;
+  height: 100%;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.Card-text p{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: start;
+  margin: 10px 15px;
+}
+
+.Card-text span{
+  font-size: 18px;
+  text-transform: none;
+  margin: 10px 15px;
+}
+
+.Card-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 18px;
+}
+
+.Card-header img{
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+}
+
+.Card-header h2{
+  margin-right: 40px;
+  text-transform: uppercase;
+  width: 200px;
+}
+

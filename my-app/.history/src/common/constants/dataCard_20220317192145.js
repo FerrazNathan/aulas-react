@@ -11,9 +11,5 @@ export const dataCard = {
   NATIONALITY: 'Nacionalidade:',
   BESTTEAM: 'É o melhor time que existe',
   BESTPLAYER: 'É o melhor jogador de todos os tempos',
-  TEAM: 'Time:',
-  ATACANTE: 'Atacante:',
-  MEIA: 'Meia:',
-  ZAGUEIRO: 'Zagueiro:',
-  FAVORITO: 'É Favorito:'
+  TEAM: 'Time'
 }

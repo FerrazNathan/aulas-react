@@ -3,7 +3,6 @@ import Structures from './components/Structures'
 import './App.css';
 import Map from './components/Map';
 import Filter from './components/Filter';
-import PresentMap from './components/PresentMap';
 
 function App() {
 
@@ -13,7 +12,6 @@ function App() {
         {/* <Structures />
         <Map /> */}
         {/* <Filter /> */}
-        <PresentMap />
       </header>
     </div>
   );

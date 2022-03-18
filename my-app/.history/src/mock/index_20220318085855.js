@@ -163,18 +163,18 @@ export const players = [
 
 export const combination = [
   {
-    juice: 'Melhor suco',
     fruit: 'Abacaxi',
-    mixture: 'Hortelã',
+    mixture: 'Contra-filé',
+    drink: 'Coca-Cola'
   },
   {
-    juice: 'Melhor suco',
-    fruit: 'Morango',
-    mixture: 'leite',
+    fruit: 'Maçã',
+    mixture: 'Filé de frango',
+    drink: 'Suco'
   },
   {
-    juice: 'Melhor suco',
     fruit: 'Abacaxi',
-    mixture: 'laranja',
+    mixture: 'Picanha',
+    drink: 'Leite'
   }
 ]

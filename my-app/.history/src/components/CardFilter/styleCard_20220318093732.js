@@ -18,6 +18,11 @@ export const Content = styled.div`
     text-align: center;
     margin: 10px 15px;
   }
+  & span {
+    font-size: 18px;
+    text-transform: none;
+    margin: 10px 15px;
+  }
   & h1{
     margin: 10px;
     text-transform: uppercase;

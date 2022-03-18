@@ -11,7 +11,7 @@ export const dataCard = {
   NATIONALITY: 'Nacionalidade:',
   BESTTEAM: 'É o melhor time que existe',
   BESTPLAYER: 'É o melhor jogador de todos os tempos',
-  FRUIT: 'Fruta:',
-  ADD: 'Com:',
-  COUNTRY: 'País:',
+  FRUIT: 'Fruta',
+  ADD: 'Com',
+  COUNTRY: 'País',
 }

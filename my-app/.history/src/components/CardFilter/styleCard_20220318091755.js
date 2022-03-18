@@ -6,8 +6,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
-  max-width: 380px;
-  width: 100%;
+  width: 380px;
   height: 100%;
   border-radius: 10px;
   margin-top: 30px;
@@ -16,6 +15,11 @@ export const Content = styled.div`
     font-weight: 600;
     font-size: 20px;
     text-align: center;
+    margin: 10px 15px;
+  }
+  & span {
+    font-size: 18px;
+    text-transform: none;
     margin: 10px 15px;
   }
   & h1{

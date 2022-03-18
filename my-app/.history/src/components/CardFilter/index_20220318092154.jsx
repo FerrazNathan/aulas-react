@@ -7,17 +7,12 @@ export default function CardFilter({ data }) {
     <S.Content>
       <h1>{data.title ? data.title : data.juice}</h1>
       {data.fruit ?
-        (<p>{dataCard.FRUIT} {data.fruit}</p>
+        (<p>{data.fruit}</p>
         ) : (
-          <p>{dataCard.NAME} {data.name}</p>
+          data.name
         )}
-      {data.mixture ?
-        (<p>{dataCard.ADD} {data.mixture}</p>
-        ) : (
-          <p>{dataCard.PLAYER} {data.team}</p>
-        )}
-      {data.country ?
-       (<p>{dataCard.COUNTRY} {data.country}</p>) : ''}
+      <p>{data.mixture ? data.mixture : data.team}</p>
+      <p>{data.country ? data.country : ''}</p>
     </S.Content >
   )
 }

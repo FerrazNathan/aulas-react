@@ -5,9 +5,8 @@ export const Content = styled.div`
   margin: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  max-width: 380px;
-  width: 100%;
+  justify-content: center;
+  width: 380px;
   height: 100%;
   border-radius: 10px;
   margin-top: 30px;
@@ -15,12 +14,17 @@ export const Content = styled.div`
   & p {
     font-weight: 600;
     font-size: 20px;
-    text-align: center;
+    text-align: start;
+    margin: 10px 15px;
+  }
+  & span {
+    font-size: 18px;
+    text-transform: none;
     margin: 10px 15px;
   }
   & h1{
-    margin: 10px;
+    padding: 10px;
+    margin-left: 5px;
     text-transform: uppercase;
-    text-align: center;
   }
 `

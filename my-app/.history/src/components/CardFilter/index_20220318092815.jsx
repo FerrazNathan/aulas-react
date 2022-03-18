@@ -11,13 +11,8 @@ export default function CardFilter({ data }) {
         ) : (
           <p>{dataCard.NAME} {data.name}</p>
         )}
-      {data.mixture ?
-        (<p>{dataCard.ADD} {data.mixture}</p>
-        ) : (
-          <p>{dataCard.PLAYER} {data.team}</p>
-        )}
-      {data.country ?
-       (<p>{dataCard.COUNTRY} {data.country}</p>) : ''}
+      {data.mixture ? data.mixture : data.team}
+      <p>{data.country ? data.country : ''}</p>
     </S.Content >
   )
 }

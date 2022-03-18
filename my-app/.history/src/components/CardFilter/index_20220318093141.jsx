@@ -16,8 +16,7 @@ export default function CardFilter({ data }) {
         ) : (
           <p>{dataCard.PLAYER} {data.team}</p>
         )}
-      {data.country ?
-       (<p>{dataCard.COUNTRY} {data.country}</p>) : ''}
+      <p>{data.country && }</p>
     </S.Content >
   )
 }

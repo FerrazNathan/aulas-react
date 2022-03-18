@@ -9,15 +9,10 @@ export default function CardFilter({ data }) {
       {data.fruit ?
         (<p>{dataCard.FRUIT} {data.fruit}</p>
         ) : (
-          <p>{dataCard.NAME} {data.name}</p>
+          data.name
         )}
-      {data.mixture ?
-        (<p>{dataCard.ADD} {data.mixture}</p>
-        ) : (
-          <p>{dataCard.PLAYER} {data.team}</p>
-        )}
-      {data.country ?
-       (<p>{dataCard.COUNTRY} {data.country}</p>) : ''}
+      <p>{data.mixture ? data.mixture : data.team}</p>
+      <p>{data.country ? data.country : ''}</p>
     </S.Content >
   )
 }

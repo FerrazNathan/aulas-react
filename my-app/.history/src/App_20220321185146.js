@@ -4,7 +4,6 @@ import './App.css';
 import Map from './components/Map';
 import Filter from './components/Filter';
 import PresentMap from './components/PresentMap';
-import PresentFilter from './components/PresentFilter';
 
 function App() {
 

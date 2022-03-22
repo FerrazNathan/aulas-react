@@ -4,14 +4,16 @@ import './App.css';
 import Map from './components/Map';
 import Filter from './components/Filter';
 import PresentMap from './components/PresentMap';
-import PresentFilter from './components/PresentFilter';
 
 function App() {
 
   return (
     <div className="App">
       <header className="App-header">
-        <PresentFilter />
+        {/* <Structures />
+        <Map /> */}
+        {/* <Filter /> */}
+        {/* <PresentMap /> */}
       </header>
     </div>
   );

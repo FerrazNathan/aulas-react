@@ -7,15 +7,16 @@ export default function Events() {
   const youCan = 'Você Conseguiu'
 
   return (
-    <div className='Container flex App-Card'>
+    <S.Container>
       <S.Content>
-        <label>Calculadora de Adição</label>
-        <input
+        <S.Label>Calculadora de Adição</S.Label>
+        <S.Input
           type='number'
           placeholder='Faça a sua soma'
           onChange={(event) => {
             alert(JSON.parse(event.target.value) + addition)
           }} />
+        <S.Button>Calcular</S.Button>
       </S.Content>
 
       <S.BoxText>
@@ -23,6 +24,6 @@ export default function Events() {
           alert(youCan)
         }}>Continue</p>
       </S.BoxText>
-    </div>
+    </S.Container>
   )
 }

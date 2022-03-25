@@ -7,7 +7,7 @@ export default function Filter() {
 
   const search = players.filter(player => {
     return (
-      player.worldCup
+      player.worldCup === false
     )
   })
 

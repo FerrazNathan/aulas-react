@@ -29,16 +29,6 @@ export const Input = styled.input`
   }
 `
 
-export const Button = styled.button`
-  font-size: 18px;
-  color: #282c34;
-  width: 90px;
-  border-radius: 5px;
-  margin-top: 10px;
-  font-weight: 600;
-  background-color: #e8f0fe;
-`
-
 export const Content = styled.div`
   border: 1px solid #FFF;
   margin: 10px;

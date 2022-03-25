@@ -3,6 +3,7 @@ import Structures from './components/Structures'
 import './App.css';
 import Map from './components/Map';
 import Filter from './components/Filter';
+import Events from './components/Events';
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
       <header className="App-header">
         {/* <Structures />
         <Map /> */}
-        <Filter />
+        {/* <Filter /> */}
+        <Events />
       </header>
     </div>
   );

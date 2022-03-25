@@ -16,13 +16,11 @@ export default function Events() {
           onChange={(event) => {
             alert(JSON.parse(event.target.value) + addition)
           }} />
-        <S.Button>Calcular</S.Button>
       </S.Content>
 
-      <S.BoxText>
-        <p onClick={() => {
+      <S.BoxText onClick={() => {
           alert(youCan)
-        }}>Continue</p>
+        }}>Continue
       </S.BoxText>
     </S.Container>
   )

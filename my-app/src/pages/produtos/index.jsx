@@ -4,11 +4,8 @@ import Header from '../../components/Header'
 
 export default function Produtos() {
   return (
-    <>
+    <S.Content>
       <Header />
-      <div>
-        <h1>Você está na página de Produtos</h1>
-      </div>
       <S.Input
         type='text'
         placeholder='Digite aqui a sua pesquisa'
@@ -16,6 +13,6 @@ export default function Produtos() {
           window.location.href = `/?${event.target.value}`
         }}
       />
-    </>
+    </S.Content>
   )
 }

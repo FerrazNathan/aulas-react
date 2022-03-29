@@ -1,5 +1,16 @@
 import styled from "styled-components";
 
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  color: #FFF;
+  text-align: center;
+  align-items: center;
+`
+
 export const Input = styled.input`
 margin-top: 30px;
   height: 40px;

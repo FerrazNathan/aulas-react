@@ -14,4 +14,9 @@ export const dataCard = {
   FRUIT: 'Fruta:',
   ADD: 'Com:',
   COUNTRY: 'País:',
+  TEAMONE: 'Corinthians',
+  TEAMTWO: 'Barcelona',
+  TEAMTREE: 'Liverpool',
+  TEAMFOUR: 'Borússia Dortmund',
+  TEAMS: 'Time que eu Torço'
 }

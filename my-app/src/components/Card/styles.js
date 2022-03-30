@@ -13,6 +13,7 @@ export const Container = styled.section`
 
 export const BoxText = styled.h1`
   text-align: center;
+  color: #05c6fc;
 `
 
 export const Content = styled.div`
@@ -22,7 +23,7 @@ export const Content = styled.div`
   justify-content: space-around;
   text-transform: uppercase;
   font-weight: 600;
-  color: #FFF;
+  color: #f7df04;
   border: 1px solid #CCC;
   width: 300px;  
   border-radius: 10px;

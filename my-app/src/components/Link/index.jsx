@@ -8,7 +8,7 @@ export default function Link({ active }) {
     <>
       {
         active &&
-        <S.TextLink onClick={(e) => {window.location.href = '/'}}>
+        <S.TextLink onClick={(e) => {window.location.href = 'https://google.com'}}>
           Link 
         </S.TextLink>
       }

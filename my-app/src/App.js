@@ -6,8 +6,6 @@ import Link from './components/Link';
 
 function App() {
 
-  const active = true
-
   return (
     <>
       <div className='App-Card container flex'>
@@ -17,8 +15,8 @@ function App() {
         <Card text={dataCard.TEAMFOUR} />
       </div>
       <div className='App-Card container flex'>
-        <Link active={active} />
-        <Link active={active} />
+        <Link active={true} />
+        <Link active={false} />
       </div>
     </>
   );

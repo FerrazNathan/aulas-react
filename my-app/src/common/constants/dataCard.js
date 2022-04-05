@@ -18,5 +18,6 @@ export const dataCard = {
   TEAMTWO: 'Barcelona',
   TEAMTREE: 'Liverpool',
   TEAMFOUR: 'Borússia Dortmund',
-  TEAMS: 'Time que eu Torço'
+  TEAMS: 'Time que eu Torço',
+  TITLE: 'Esse é o meu projeto'
 }

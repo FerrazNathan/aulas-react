@@ -1,21 +1,24 @@
 import React from 'react';
-import Structures from './components/Structures'
 import './App.css';
-import Map from './components/Map';
-import Filter from './components/Filter';
-import Events from './components/Events';
+import Card from './components/Card';
+import { dataCard } from './common/constants/dataCard';
+import Link from './components/Link';
 
 function App() {
 
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <Structures />
-        <Map /> */}
-        {/* <Filter /> */}
-        <Events />
-      </header>
-    </div>
+    <>
+      <div className='App-Card container flex'>
+        <Card text={dataCard.TEAMONE} />
+        <Card text={dataCard.TEAMTWO} />
+        <Card text={dataCard.TEAMTREE} />
+        <Card text={dataCard.TEAMFOUR} />
+      </div>
+      <div className='App-Card container flex'>
+        <Link active={true} />
+        <Link active={false} />
+      </div>
+    </>
   );
 }
 

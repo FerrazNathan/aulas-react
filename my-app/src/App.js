@@ -6,12 +6,14 @@ function App() {
 
   return (
     <>
-      <form>
+      <form className='container'>
+        <h1>Exercício de funções</h1>
         <input
           type='number'
+          placeholder='Digite aqui a sua pesquisa'
           onChange={(event) => { Trainning(event.target.value, 'é muito louco') }}
         />
-        <button onClick={(event) => { Testting('Palmeiras', 'Mundial') }}>Buscar</button>
+        <button onClick={() => { Testting('Palmeiras', 'Mundial') }}>Buscar</button>
       </form>
     </>
   );

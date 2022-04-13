@@ -1,25 +1,25 @@
 import React from 'react';
 import './App.css';
-import { Testing, Trainning } from './utils/index';
+import { Banner } from './components/Banner';
+import Cars from '../src/pages/cars'
+import House from '../src/pages/house'
+import Market from '../src/pages/market'
+import Sports from '../src/pages/sports'
 
-function App() {
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-  const not = 'Palmeiras'
-  const world = 'Mundial'
+export default function App() {
 
   return (
-    <>
-      <form className='container'>
-        <h1>Exercício de funções</h1>
-        <input
-          type='search'
-          placeholder='Digite aqui a sua pesquisa'
-          onChange={(event) => { Trainning(event.target.value, 'é muito louco') }}
-        />
-        <button onClick={() => { Testing(not, world) }}>Buscar</button>
-      </form>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' exact element={<Banner />} />
+        <Route path='/cars' exact element={<Cars />} />
+        <Route path='/house' element={<House />} />
+        <Route path='/market' element={<Market />} />
+        <Route path='/sports' element={<Sports />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;

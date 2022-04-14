@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-expressions */
-export const Trainning = (text) => {
+export const trainning = (text) => {
   if(text === 'Guitarra'){
     console.log('Tem cordas')
   }
@@ -15,7 +15,7 @@ export const Trainning = (text) => {
   }
 }
 
-export const Testing = (value) => {
+export const testing = (value) => {
   switch(value){
     case 'Frango': console.log('Frango combina com Catupiry');; break;
     case 'Presunto': console.log('Presunto combina com queijo');; break;
@@ -24,6 +24,6 @@ export const Testing = (value) => {
   }
 }
 
-export const Open = () => {
+export const open = () => {
   alert('Abra o Console do seu navegador')
 }

@@ -1,26 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import { testing, trainning, open } from './utils/index';
 
 function App() {
 
+  const replace = () => {
+    setChange('Meu amor maior') || setGod('Mudou a minha vida')
+  }
+  const [change, setChange] = useState('Jesus')
+  const [god, setGod] = useState('Salvador')
+  const [counter, setCounter] = useState(2)
+
   return (
-    <form className='container'>
-      <h1>Exercício de if else</h1>
-      <input
-        type='search'
-        placeholder='Busque um instrumento'
-        onChange={(event) => { trainning(event.target.value) }}
-      />
-      <button onClick={() => { open() }}>Buscar</button>
-      <h1>Exercício de Switch case</h1>
-      <input
-        type='search'
-        placeholder='Faça a sua combinação'
-        onChange={(event) => { testing(event.target.value) }}
-      />
-      <button onClick={() => { open() }}>Buscar</button>
-    </form>
+    <div className='container'>
+      <h1>1° Exercício de useState</h1>
+      {change} {god}
+      <button onClick={() =>  replace()}>Buscar</button>
+      <h1>2° Exercício de useState</h1>
+      {counter}
+      <button onClick={() => setCounter(counter * 4)}>Multiplicar por 4</button>
+    </div>
   );
 }
 

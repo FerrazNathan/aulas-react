@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 500px;
+  width: 600px;
   height: 400px;
   margin: 50px auto;
   padding: 0 2rem;
@@ -22,7 +22,7 @@ body {
   justify-content: center;
   line-height: 3;
   flex-direction: column;
-  color: #7fff00;
+  color: #FFF;
 }
 
 .container input {
@@ -36,10 +36,10 @@ body {
 }
 
 input:focus {
-  background: #7fff00;
-  color: #ff6347;
+  background: #CCC;
+  color: #dd2a0a;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .container button {
@@ -50,8 +50,8 @@ input:focus {
   border-radius: 25px;
   border: none;
   cursor: pointer;
-  background: #7fff00;
-  color: #ff6347;
+  background: #CCC;;
+  color: #dd2a0a;
   font-weight: 600;
   font-size: 17px;
 }

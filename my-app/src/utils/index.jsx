@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-expressions */
 export const trainning = (text) => {
   if(text === 'Guitarra'){
     console.log('Tem cordas')

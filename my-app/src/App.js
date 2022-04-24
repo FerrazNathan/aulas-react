@@ -1,27 +1,19 @@
 import React from 'react';
 import './App.css';
-import { testing, trainning, open } from './utils/index';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Results from './components/Results'
+import Home from './components/Home'
 
 function App() {
 
-  return (
-    <form className='container'>
-      <h1>Exercício de if else</h1>
-      <input
-        type='search'
-        placeholder='Busque um instrumento'
-        onChange={(event) => { trainning(event.target.value) }}
-      />
-      <button onClick={() => { open() }}>Buscar</button>
-      <h1>Exercício de Switch case</h1>
-      <input
-        type='search'
-        placeholder='Faça a sua combinação'
-        onChange={(event) => { testing(event.target.value) }}
-      />
-      <button onClick={() => { open() }}>Buscar</button>
-    </form>
-  );
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path='/' exact element={<Home />} />
+				<Route path='/results' element={<Results />} />
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
 export default App;

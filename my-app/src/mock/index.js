@@ -38,6 +38,19 @@ export const bestPlayer = [
       ultimo: 'Corinthians',
     }
   },
+  {
+    image: './muller.jpeg',
+    jogador: 'Thomas Muller',
+    posicao: 'meia',
+    idade: 36,
+    nacionalidade: 'Alemão',
+    ganhou_copa: true,
+    bola_de_ouro: false,
+    time: {
+      atual: 'Bayern Munique',
+      ultimo: 'Bayern Munique',
+    }
+  },
 ]
 
 export const nathan = {

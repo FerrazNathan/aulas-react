@@ -3,20 +3,21 @@ import './App.css';
 
 function App() {
 
-  const replace = () => {
-    setChange('Meu amor maior') || setGod('Mudou a minha vida')
-  }
-  const [change, setChange] = useState('Jesus')
-  const [god, setGod] = useState('Salvador')
+  const [change, setChange] = useState('Jesus Cristo')
+  const [god, setGod] = useState('Meu Salvador')
   const [counter, setCounter] = useState(2)
+
+  const replace = () => {
+    setChange('O Espírito Santo') || setGod('Melhor amigo')
+  }
 
   return (
     <div className='container'>
       <h1>1° Exercício de useState</h1>
-      {change} {god}
-      <button onClick={() =>  replace()}>Buscar</button>
+      <p>{change} é o {god}</p>
+      <button onClick={() =>  replace()}>Confirmar</button>
       <h1>2° Exercício de useState</h1>
-      {counter}
+      <p>{counter}</p>
       <button onClick={() => setCounter(counter * 4)}>Multiplicar por 4</button>
     </div>
   );

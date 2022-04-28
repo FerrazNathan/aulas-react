@@ -1,7 +1,7 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import * as S from './style'
 
-export default function Teams () {
+export default function Teams() {
   //states para armazenar o nome dos times e os jogadores, setState vai alterar
   const [team, setTeam] = useState('Seleção Brasileira')
   const [goalkeeper, setGoalkeeper] = useState('Alisson Becker')
@@ -19,23 +19,22 @@ export default function Teams () {
   //state para setar o time que eu vou alterar
   const [start, setStart] = useState('')
 
-  //função para alterar para o time do Corinthians
-  const corinthians = () => {
-    setStart('corinthians')
-  }
-
-  //função para alterar para o time do Palmeiras
-  const palmeiras = () => {
-    setStart('palmeiras')
-  }
-
-  //função para alterar para o time do São Paulo
-  const saoPaulo = () => {
-    setStart('saoPaulo')
-  }
-
   //useEffect vai usar o set de cada state para alterar o time e os jogadores
   useEffect(() => {
+    if (start === 'brasil') {
+      setTeam('Seleção Brasileira')
+      setGoalkeeper('Alisson Becker')
+      setRightSide('Danilo')
+      setLeftSide('Renan Lodi')
+      setRightDefender('Marquinhos')
+      setLeftDefender('Tiago Silva')
+      setFirstSteeringWeel('Casemiro')
+      setSecondSteeringWeel('Lucas Paquetá')
+      setHalf('Neymar')
+      setRightEnd('Raphinha')
+      setLeftEnd('Vinícius jr')
+      setForward('Gabriel Jesus')
+    }
     if (start === 'corinthians') {
       setTeam('Time do Corinthians')
       setGoalkeeper('Cássio')
@@ -113,9 +112,10 @@ export default function Teams () {
       </S.Flex>
       <S.Buttons>
         {/* no onClick dos botões eu chamo a função que vai alterar os times e jogadores */}
-        <S.Corinthians onClick={() => corinthians()}>Corinthians</S.Corinthians>
-        <S.Palmeiras onClick={() => palmeiras()}>Palmeiras</S.Palmeiras>
-        <S.SaoPaulo onClick={() => saoPaulo()}>São Paulo</S.SaoPaulo>
+        <S.Brasil onClick={() => setStart('brasil')}>Brasil</S.Brasil>
+        <S.Corinthians onClick={() => setStart('corinthians')}>Corinthians</S.Corinthians>
+        <S.Palmeiras onClick={() => setStart('palmeiras')}>Palmeiras</S.Palmeiras>
+        <S.SaoPaulo onClick={() => setStart('saoPaulo')}>São Paulo</S.SaoPaulo>
       </S.Buttons>
     </S.Container>
   );

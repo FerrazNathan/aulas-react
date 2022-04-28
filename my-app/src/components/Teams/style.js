@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  width: 900px;
+  width: 1080px;
   height: 100%;
   margin: 50px auto;
   padding: 0 2rem;
@@ -33,7 +33,7 @@ export const Corinthians = styled.button`
   width: 20%;
   height: 40px;
   padding: 10px;
-  margin: 30px;
+  margin: 20px;
   border-radius: 25px;
   border: none;
   cursor: pointer;
@@ -47,7 +47,7 @@ export const Palmeiras = styled.button`
   width: 20%;
   height: 40px;
   padding: 10px;
-  margin: 30px;
+  margin: 20px;
   border-radius: 25px;
   border: none;
   cursor: pointer;
@@ -60,12 +60,26 @@ export const SaoPaulo = styled.button`
   width: 20%;
   height: 40px;
   padding: 10px;
-  margin: 30px;
+  margin: 20px;
   border-radius: 25px;
   border: none;
   cursor: pointer;
   background: #D40C23;
   color: #060606;
+  font-weight: 600;
+  font-size: 17px;
+`
+
+export const Brasil = styled.button`
+  width: 20%;
+  height: 40px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  background: #FDEF08;
+  color: #3BD62F;
   font-weight: 600;
   font-size: 17px;
 `

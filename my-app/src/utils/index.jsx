@@ -27,3 +27,13 @@ export const testing = (value) => {
 export const open = () => {
   alert('Abra o Console do seu navegador')
 }
+
+export const corinthians = () => {
+  setStart('corinthians')
+}
+export const palmeiras = () => {
+  setStart('palmeiras')
+}
+export const saoPaulo = () => {
+  setStart('saoPaulo')
+}

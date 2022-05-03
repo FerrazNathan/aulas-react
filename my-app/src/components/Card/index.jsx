@@ -1,16 +1,14 @@
 import React from 'react'
-import { dataCard } from '../../common/constants/dataCard'
 import * as S from './styles'
 
-export default function Card({ text }) {
+export default function Card({ img, setStart, clicado }) {
 
   return (
     <S.Container>
       <S.Content>
         <S.BoxText>
-          {dataCard.TEAMS}
+          <img src={img} onClick={() => setStart(clicado)} />
         </S.BoxText>
-        {text}
       </S.Content>
     </S.Container>
   )

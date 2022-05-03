@@ -1,15 +1,13 @@
 // import React, { useEffect, useState } from 'react';
 import './App.css';
-import Teams from './components/Teams';
-import ListName from './components/ListName';
+import BoxMovies from './components/BoxMovies';
 
 function App() {
 
   return (
-    <>
-      <Teams />
-      <ListName />
-    </>
+    <div className='container'>
+      <BoxMovies />
+    </div>
 
   )
 }

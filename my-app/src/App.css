@@ -12,3 +12,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #282c34
 }
+
+.lists{
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+}
+
+.lists a{
+  color: #FFF;
+  text-decoration: none;
+}

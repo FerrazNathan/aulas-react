@@ -1,25 +1,28 @@
 import React from 'react';
 import './App.css';
-import { Banner } from './components/Banner';
-import Cars from '../src/pages/cars'
-import House from '../src/pages/house'
-import Market from '../src/pages/market'
-import Sports from '../src/pages/sports'
-
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Header from './components/Header';
 
 export default function App() {
 
+  const url = 'http://localhost:3000/pages?page=carros&name=lojadecarros&cor=blue'
+  const spliting = url.split('page=')[1]
+  const splitingUrl = url.split('name')[1]
+  const urlSpliting = url.split('page=')[1]
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' exact element={<Banner />} />
-        <Route path='/cars' exact element={<Cars />} />
-        <Route path='/house' element={<House />} />
-        <Route path='/market' element={<Market />} />
-        <Route path='/sports' element={<Sports />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <Header />
+      <ul className='lists'>
+        <li>
+          <a href='/cars'>Teste de Split</a>
+        </li>
+      </ul>
+      <ul className='lists'>
+        <li>
+          <a href='/sports'>Teste Query String</a>
+        </li>
+      </ul>
+    </div>
   );
 }
 

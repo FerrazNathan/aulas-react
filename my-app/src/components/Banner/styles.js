@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Box = styled.div`
-	width: 1000px;
+	max-width: 1000px;
 	margin: 50px auto;
 	color: #FFF;
 `
@@ -11,11 +11,11 @@ export const Container = styled.div`
 		width: 1000px;
 		margin: 50px auto;
 		flex-wrap: wrap;
-    align-item: center;
-		cursor: pointer;
+    align-items: center;
     justify-content: space-around;
-    & img{
-			width: 400px;
-			margin: 10px
+		& a{
+			font-size: 18px;
+			font-weight: 500;
+			cursor: pointer;
 		}
 `

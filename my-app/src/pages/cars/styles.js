@@ -12,10 +12,17 @@ export const Container = styled.div`
   color: #FFF;
 	margin: 20px auto;
 	width: 700px;
+	text-align: center;
+	& h1{
+		text-transform: uppercase;
+		margin: 20px;
+	}
+	& p{
+		font-size: 18px;
+	}
 	& img{
 		width: 700px;
 		height: 550px;
 		margin: 20px auto;
-		cursor: pointer;
 	}
 `

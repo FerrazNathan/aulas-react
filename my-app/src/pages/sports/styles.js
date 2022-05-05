@@ -12,10 +12,5 @@ export const Container = styled.div`
   color: #FFF;
 	margin: 20px auto;
 	width: 700px;
-	& img{
-		width: 700px;
-		height: 550px;
-		margin: 20px auto;
-		cursor: pointer;
-	}
+	cursor: pointer;
 `

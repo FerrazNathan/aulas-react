@@ -6,11 +6,13 @@ import { redirect } from '../../utils'
 export default function Cars() {
 
 	return (
-		<S.Content>
+		<>
 			<Header />
-			<S.Container onClick={() => redirect('https://www.webmotors.com.br/carros-de-luxo')}>
-				<h1>Exercício de Query String</h1>
-			</S.Container>
-		</S.Content>
+			<S.Content>
+				<S.Container>
+					<h1>Exercício de Query String...</h1>
+				</S.Container>
+			</S.Content>
+		</>
 	)
 }

@@ -8,7 +8,7 @@ export default function Header() {
       <ul>
         <li onClick={() => window.location.href = '/'}>Home</li>
         <li onClick={() => window.location.href = 'http://localhost:3000/cars?page=carros&name=lojadecarros&cor=blue'}>Carros</li>
-        <li onClick={() => window.location.href = '/sports'}>Esportes</li>
+        <li onClick={() => window.location.href = 'http://localhost:3000/sports?page=esportes&name=lojadeesportes&cor=grey&local=brasil&status=superloja'}>Esportes</li>
       </ul>
     </S.ContentHeader>
   )

@@ -6,6 +6,6 @@ export const Testing = (team, text) => {
   alert(`O ${team} não tem ${text}`)
 }
 
-export const redirect = ( pages ) => {
-  window.location.href= pages
+export const redirect = (pages) => {
+  window.location.href = pages
 }

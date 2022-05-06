@@ -17,7 +17,7 @@ export const Banner = () => {
 						</ul>
 						<ul className='lists'>
 							<li>
-								<a href='/sports'>Teste Query String</a>
+								<a href='http://localhost:3000/sports?page=esportes&name=lojadeesportes&cor=grey&local=brasil&status=superloja'>Teste Query String</a>
 							</li>
 						</ul>
 					</div>

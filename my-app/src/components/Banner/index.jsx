@@ -1,6 +1,7 @@
 import React from "react";
 import * as S from './styles'
 import Header from "../Header";
+import Formulario from "../Formulario";
 
 export const Banner = () => {
 
@@ -9,18 +10,7 @@ export const Banner = () => {
 			<Header />
 			<S.Box>
 				<S.Container>
-					<div className='container'>
-						<ul className='lists'>
-							<li>
-								<a href='http://localhost:3000/cars?page=carros&name=lojadecarros&cor=blue'>Exercício de Split</a>
-							</li>
-						</ul>
-						<ul className='lists'>
-							<li>
-								<a href='http://localhost:3000/sports?page=esportes&name=lojadeesportes&cor=grey&local=brasil&status=superloja'>Teste Query String</a>
-							</li>
-						</ul>
-					</div>
+					<Formulario />
 				</S.Container>
 			</S.Box>
 		</>

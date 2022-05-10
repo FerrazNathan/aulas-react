@@ -29,3 +29,15 @@ body {
   color: #FFF;
   text-decoration: none;
 }
+
+.azul{
+  background-color: blue;
+}
+
+.amarelo{
+  background-color: yellow;
+}
+
+.vermelho{
+  background-color: red;
+}

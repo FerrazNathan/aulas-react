@@ -11,13 +11,7 @@ export const Box = styled.div`
 `
 
 export const Container = styled.div`
-  /* display: flex;
-	width: 1000px;
-	margin: 50px auto;
-	flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-	cursor: pointer; */
+
 `
 
 export const List = styled.div`
@@ -26,4 +20,11 @@ export const List = styled.div`
 	font-weight: 500;
 	justify-content: center;
 	align-items: flex-start;
+	text-transform: uppercase;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	:last-child{
+		padding-bottom: 30px;
+	}
 `

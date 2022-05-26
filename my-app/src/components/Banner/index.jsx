@@ -6,11 +6,11 @@ import axios from "axios";
 export const Banner = () => {
 
 	const [responseData, setResponseData] = useState()
-
-	console.log('o que está chegando aqui =>', responseData)
+	
+	const url = 'https://conferencia-radicais-default-rtdb.firebaseio.com/inscritos.json'
 
 	useEffect(() => {
-		axios.get('https://conferencia-radicais-default-rtdb.firebaseio.com/inscritos.json')
+		axios.get(url)
 			.then(function (response) {
 				setResponseData(Object.entries(response.data))
 			})
@@ -26,7 +26,6 @@ export const Banner = () => {
 						responseData && Object.values(responseData).map((name) => {
 							return (
 								<>
-									{/* <h1>Lista de inscrição</h1> */}
 									<S.List key={name}>
 										<p>{name[1].name}</p>
 									</S.List>

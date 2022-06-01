@@ -6,28 +6,43 @@ import axios from "axios";
 export const Banner = () => {
 
 	const [responseData, setResponseData] = useState()
+	const [dataPokemon, setDataPokemon] = useState()
 	
-	const url = 'https://conferencia-radicais-default-rtdb.firebaseio.com/inscritos.json'
+	const url = 'https://pokeapi.co/api/v2/pokemon?limit=150&offset=0'
+	const urlPokemon = 'https://pokeapi.co/api/v2/pokemon/1/'
 
 	useEffect(() => {
 		axios.get(url)
 			.then(function (response) {
-				setResponseData(Object.entries(response.data))
+				setResponseData(response.data)
 			})
 	}, [])
+
+	useEffect(() => {
+		axios.get(urlPokemon)
+		.then(function (response) {
+			setDataPokemon(response.data)
+		})
+	},[])
+
+	console.log('o que esta aqui', dataPokemon);
+
+	const informations = () => {
+		
+	}
 
 	return (
 		<>
 			<Header />
 			<S.Box>
-				<h1>Lista de inscrição</h1>
+				<h1>Lista de Pokémons</h1>
 				<S.Container>
 					{
-						responseData && Object.values(responseData).map((name) => {
+						responseData && responseData.results.map((name) => {
 							return (
 								<>
 									<S.List key={name}>
-										<p>{name[1].name}</p>
+										<p>{name.name}</p>
 									</S.List>
 								</>
 

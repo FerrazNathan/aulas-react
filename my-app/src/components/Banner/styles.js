@@ -8,6 +8,13 @@ export const Box = styled.div`
 	& h1{
 		text-align: left;
 	}
+	& input {
+		outline: 0;
+		border-radius: 10px;
+		border: none;
+		padding: 2px;
+		margin: 10px 0;
+	}
 `
 
 export const Container = styled.div`
@@ -26,5 +33,8 @@ export const List = styled.div`
 	margin-top: 10px;
 	:last-child{
 		padding-bottom: 30px;
+	}
+	& button{
+		
 	}
 `

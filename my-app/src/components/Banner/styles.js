@@ -7,6 +7,7 @@ export const Box = styled.div`
 	height: 90vh;
 	& h1{
 		text-align: left;
+		text-transform: uppercase;
 	}
 	& input {
 		outline: 0;

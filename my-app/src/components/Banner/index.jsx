@@ -22,7 +22,7 @@ export const Banner = () => {
 		try {
 			axios.get(url)
 				.then(function (response) {
-					setResponseData(Object.entries(response.data))
+					setResponseData(response.data)
 				}).catch(() => {
 				})
 		} catch (e) {
@@ -53,7 +53,7 @@ export const Banner = () => {
 	const deleting = (id) => {
 		try {
 			axios.delete(`https://connections-a2264-default-rtdb.firebaseio.com/inscricao/${id}.json`, {})
-				.then(function (response) {
+				.then(function () {
 					setMonitoring(!monitoring)
 				}).catch(() => {
 				})
@@ -63,16 +63,14 @@ export const Banner = () => {
 	}
 
 	const editing = (id) => {
-		try {
-			axios.patch(`https://connections-a2264-default-rtdb.firebaseio.com/inscricao/${id}.json`, { name: dataEditor })
-				.then(function (response) {
-					setMonitoring(!monitoring)
-				}).catch(() => {
-				})
-		} catch (e) {
-			throw new Error("Algo deu errado na conexão");
-		}
+		axios.patch(`https://connections-a2264-default-rtdb.firebaseio.com/inscricao/${id}.json`, { name: name })
+			.then(function () {
+				setMonitoring(!monitoring)
+			}).catch(() => {
+				throw new Error("Algo deu errado na conexão");
+			})
 	}
+
 
 	return (
 		<>
@@ -81,22 +79,18 @@ export const Banner = () => {
 				<h1>Lista de inscrição</h1>
 				<S.Container>
 					{
-						responseData && Object.values(responseData).map((name) => {
+						responseData && Object.entries(responseData).map(item => {
 							return (
 								<>
-									<S.List key={name}>
-										<p>{name[1].name} {name[1].surname}</p>
-										<input type='search' onchange={(e) => setDataEditor(e.target.value)} />
-										<button onClick={(e) => {
-											e.preventDefault()
-											editing(name[0])
-										}}>
+									<S.List >
+										<p>{item[1].name} {item[1].surname}</p>
+										<input type='search' onChange={(e) => setName(e.target.value)} />
+										<button onClick={() => editing(item[0])}>
 											Editar
 										</button>
-										<button onClick={() => deleting(name[0])}>Remover</button>
+										<button onClick={() => deleting(item[0])}>Remover</button>
 									</S.List>
 								</>
-
 							)
 						})
 					}

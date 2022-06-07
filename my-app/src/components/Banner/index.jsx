@@ -6,111 +6,71 @@ import axios from "axios";
 export const Banner = () => {
 
 	const [responseData, setResponseData] = useState()
-	const [name, setName] = useState()
-	const [surName, setSurName] = useState()
-	const [fone, setFone] = useState()
-	const [city, setCity] = useState()
-	const [sheperd, setSheperd] = useState()
-	const [church, setChurch] = useState()
-	const [office, setOffice] = useState()
-	const [monitoring, setMonitoring] = useState()
-	const [dataEditor, setDataEditor] = useState()
 
-	const url = 'https://connections-a2264-default-rtdb.firebaseio.com/inscricao.json'
+
+	const url = 'https://aula-de-crud-default-rtdb.firebaseio.com/cadastro.json'
 
 	useEffect(() => {
+		console.log('ok')
 		try {
 			axios.get(url)
 				.then(function (response) {
-					setResponseData(response.data)
+
+					setResponseData(response?.data)
 				}).catch(() => {
 				})
 		} catch (e) {
 			throw new Error("Algo deu errado na conexão");
 		}
-	}, [monitoring])
+	}, [])
 
-	const register = () => {
-		try {
-			axios.post(url, {
-				name: name,
-				surname: surName,
-				tel: fone,
-				city: city,
-				sheperd: sheperd,
-				church: church,
-				office: office,
-			})
-				.then(function (response) {
-					setMonitoring(!monitoring)
-				}).catch(() => {
-				})
-		} catch (e) {
-			throw new Error("Algo deu errado na conexão");
-		}
+	const changeMovies = responseData && Object.values(responseData).filter(item => {
+		return item.type === 'filme'
 	}
+	)
 
-	const deleting = (id) => {
-		try {
-			axios.delete(`https://connections-a2264-default-rtdb.firebaseio.com/inscricao/${id}.json`, {})
-				.then(function () {
-					setMonitoring(!monitoring)
-				}).catch(() => {
-				})
-		} catch (e) {
-			throw new Error("Algo deu errado na conexão");
-		}
-	}
 
-	const editing = (id) => {
-		axios.patch(`https://connections-a2264-default-rtdb.firebaseio.com/inscricao/${id}.json`, { name: name })
-			.then(function () {
-				setMonitoring(!monitoring)
-			}).catch(() => {
-				throw new Error("Algo deu errado na conexão");
-			})
+	const changeSeries = responseData && Object.values(responseData).filter(item => {
+		return item.type === 'serie'
 	}
+	)
 
 
 	return (
 		<>
 			<Header />
 			<S.Box>
-				<h1>Lista de inscrição</h1>
-				<S.Container>
+				<S.BoxMovies>
+					<h1>Filmes</h1>
 					{
-						responseData && Object.entries(responseData).map(item => {
+						changeMovies && changeMovies.map(item => {
 							return (
-								<>
-									<S.List >
-										<p>{item[1].name} {item[1].surname}</p>
-										<input type='search' onChange={(e) => setName(e.target.value)} />
-										<button onClick={() => editing(item[0])}>
-											Editar
-										</button>
-										<button onClick={() => deleting(item[0])}>Remover</button>
-									</S.List>
-								</>
+								<S.List >
+									<p>Título: {item.title}</p>
+									<p>Tipo: {item.type}</p>
+									<p>Gênero: {item.genre}</p>
+									<img src={item.image} />
+								</S.List>
+
 							)
 						})
 					}
-				</S.Container>
-				<form>
-					<label>Nome</label>	<input type='text' onChange={(e) => setName(e.target.value)} />
-					<label>Sobrenome</label><input type='text' onChange={(e) => setSurName(e.target.value)} />
-					<label>Telefone</label><input type='number' onChange={(e) => setFone(e.target.value)} />
-					<label>Cidade</label><input type='text' onChange={(e) => setCity(e.target.value)} />
-					<label>Pastor</label><input type='text' onChange={(e) => setSheperd(e.target.value)} />
-					<label>Igreja</label><input type='text' onChange={(e) => setChurch(e.target.value)} />
-					<label>Cargo</label><input type='text' onChange={(e) => setOffice(e.target.value)} />
-					<button
-						onClick={(e) => {
-							e.preventDefault()
-							register()
-						}}>
-						Inscrever-se
-					</button>
-				</form>
+				</S.BoxMovies>
+				<S.BoxSeries>
+					<h1>Séries</h1>
+					{
+						changeSeries && changeSeries.map(item => {
+							return (
+								<S.List >
+									<p>Título: {item.title}</p>
+									<p>Tipo: {item.type}</p>
+									<p>Gênero: {item.genre}</p>
+									<img src={item.image} />
+								</S.List>
+							)
+						})
+					}
+				</S.BoxSeries>
 			</S.Box>
 		</>
 	)

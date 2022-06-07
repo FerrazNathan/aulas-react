@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Sports from '../src/pages/sports'
+import Cadastro from '../src/pages/cadastro'
 import { Banner } from './components/Banner'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
@@ -11,7 +11,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Banner />} />
-          <Route path='/sports' element={<Sports />} />
+          <Route path='/cadastro' element={<Cadastro />} />
         </Routes>
       </BrowserRouter>
     </>

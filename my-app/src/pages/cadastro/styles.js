@@ -5,31 +5,36 @@ export const Box = styled.div`
 	margin: 50px auto;
 	color: #FFF;
 	height: 90vh;
-	display: flex;
-	justify-content: space-between;
 	& h1{
 		text-align: left;
 		text-transform: uppercase;
 	}
-	& img {
-		width: 350px;
-		height: 330px;
-	}
-	& input {
+	& input, select {
 		outline: 0;
 		border-radius: 10px;
 		border: none;
 		padding: 2px;
 		margin: 10px 0;
 	}
+  & form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 90%;
+    & input, select, button {
+      width: 50%;
+      margin-bottom: 20px;
+      padding: 5px;
+    }
+  }
 `
 
-export const BoxMovies = styled.div`
-
-`
-
-export const BoxSeries = styled.div`
-
+export const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+	align-items: center;
 `
 
 export const List = styled.div`
@@ -46,6 +51,17 @@ export const List = styled.div`
 		padding-bottom: 30px;
 	}
 	& button{
-		
+		cursor: pointer;
 	}
+	& p{
+
+	}
+`
+
+export const Button = styled.button`
+  width: 10%;
+  height: 10%;
+  padding: 3px;
+	margin-top: 15px;
+	cursor: pointer;
 `

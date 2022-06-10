@@ -35,6 +35,7 @@ export const Container = styled.div`
   justify-content: space-between;
   width: 95%;
 	align-items: center;
+	margin-bottom: 20px;
 `
 
 export const List = styled.div`

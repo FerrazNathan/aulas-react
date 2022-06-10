@@ -4,7 +4,6 @@ export const Box = styled.div`
 	max-width: 1000px;
 	margin: 50px auto;
 	color: #FFF;
-	height: 90vh;
 	display: flex;
 	justify-content: space-between;
 	& h1{
@@ -19,9 +18,17 @@ export const Box = styled.div`
 		outline: 0;
 		border-radius: 10px;
 		border: none;
-		padding: 2px;
+		padding: 5px;
 		margin: 10px 0;
 	}
+`
+
+export const Button = styled.button`
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
 `
 
 export const BoxMovies = styled.div`

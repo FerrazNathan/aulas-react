@@ -61,8 +61,10 @@ export const List = styled.div`
 
 export const Button = styled.button`
   width: 10%;
-  height: 10%;
+  height: 5%;
   padding: 3px;
 	margin-top: 15px;
+	border: none;
+	border-radius: 10px;
 	cursor: pointer;
 `

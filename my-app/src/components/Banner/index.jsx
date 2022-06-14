@@ -4,34 +4,40 @@ import Header from "../Header";
 
 export const Banner = () => {
 
-	const [data, setData] = useState()
+	const [email, setEmail] = useState()
+	const [password, setPassword] = useState('')
 
-	const open = () => {
-		localStorage.setItem('user', 'Nathan')
-	}
-
-	const seeMore = () => {
-		sessionStorage.setItem('data', data)
+	const submit = () => {
+		localStorage.setItem('email', email)
+		localStorage.setItem('password', password)
 		window.location.href = '/cadastro'
 	}
+
+	console.log(email, 'sacana');
+	console.log(password, 'senha do mal');
 
 	return (
 		<>
 			<Header />
 			<S.Box>
-				Exercício de localStorage
-				<a href='/cadastro'>
-					<S.Button onClick={() => open()}>
-						Ver
-					</S.Button>
-				</a>
-			</S.Box>
-			<S.Box>
-				Exercício de sessionStorage
-				<input type='number' onChange={(e) => setData(e.target.value)} />
-					<S.Button onClick={() => seeMore()}>
-						Ver Mais
-					</S.Button>
+				Exercício de LocalStorage
+				<input
+					type='email'
+					placeholder='Digite seu email'
+					value={email}
+					required
+					onChange={(e) => setEmail(e.target.value)}
+				/>
+				<input
+					type='password'
+					placeholder='Digite sua senha'
+					value={password}
+					required
+					onChange={(e) => setPassword(e.target.value)}
+				/>
+				<S.Button onClick={() => submit()}>
+					Verificar
+				</S.Button>
 			</S.Box>
 		</>
 	)
